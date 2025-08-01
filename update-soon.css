@@ -1,0 +1,83 @@
+/* Import Google Fonts to match the main page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Re-using the same color variables for consistency */
+:root {
+    --accent-color: #5FBDB5; /* Soft Teal */
+    --accent-color-light: #88d4cf;
+    --primary-text: #282C34; /* Dark Charcoal */
+    --secondary-text: #5c6370;
+    --bg-light: #F5F7FA;
+    --white: #ffffff;
+    --border-color: #e0e6ed;
+}
+
+/* Center all content on the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top left, #F5F7FA 90%, #e9f5f4); /* Using the optional gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Styling the content container */
+.container {
+    max-width: 550px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--secondary-text);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+/* Button styles - Copied from the main stylesheet for identical look and feel */
+.btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    box-shadow: 0 4px 20px rgba(95, 189, 181, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color-light);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 25px rgba(95, 189, 181, 0.4);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
